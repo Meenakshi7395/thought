@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Thought Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+      <nav class="top-nav-bar">
+        <div class="brand-name">
+            Thoughts
+        </div>
+        
+        <div class="bar">
+          <button class="bars" onclick="menu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="navlist">
+            <li>
+              <button id="Classic">Add</button>
+            </li>
+            <li>
+              <button id="Cubism">View All</button>
+            </li>
+            <li>
+              <button id="Favorites">Favorites<span id="count"></span></button>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="card" id="userCard">
+      <label for="Input">Enter Your Thought : </br></label>
+     
+    <input type="text" id="Input">
+    <button onclick="submit()">Submit</button>
+    </div>
+    <div style="height: 200px; width: 200px; border: 1px solid black; overflow: hidden;">
+      <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eius cupiditate ratione?</p>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
